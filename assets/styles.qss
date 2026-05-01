@@ -1,0 +1,200 @@
+
+
+/* Общие стили для всего приложения */
+QMainWindow {
+    background-color: #F5F7FA; /* Светлый серо-голубой фон */
+}
+
+/* Стили для боковой панели */
+#sidebar {
+    background-color: #4A90E2; /* Голубой фон */
+    padding: 15px;
+    border-right: 1px solid #D1D5DB; /* Серый бордер */
+}
+
+/* Заголовок боковой панели */
+#sidebar-title {
+    color: #FFFFFF; /* Белый текст */
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Кнопки боковой панели */
+#sidebar-btn {
+    background-color: transparent;
+    color: #FFFFFF; /* Белый текст */
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px; /* Закруглённые углы */
+    text-align: left;
+    transition: background-color 0.3s; /* Плавный переход для эффекта наведения */
+}
+
+#sidebar-btn:hover {
+    background-color: #6AB0FF; /* Светлее голубой при наведении */
+}
+
+/* Поле ввода для поиска */
+#search-input {
+    padding: 10px;
+    border: 1px solid #D1D5DB; /* Серый бордер */
+    border-radius: 8px; /* Закруглённые углы */
+    font-size: 14px;
+    background-color: #FFFFFF; /* Белый фон */
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: #4A90E2; /* Голубой бордер при фокусе */
+    outline: none;
+}
+
+/* Таблица данных */
+#data-table {
+    background-color: #FFFFFF; /* Белый фон */
+    border: none;
+    border-radius: 8px; /* Закруглённые углы */
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Элементы таблицы */
+#data-table::item {
+    padding: 10px;
+    border-bottom: 1px solid #E5E7EB; /* Светло-серый бордер */
+}
+
+/* Чередующиеся цвета строк */
+#data-table::item:alternate {
+    background-color: #A4D96C; /* Лаймовый фон для чётных строк */
+}
+
+/* Стили для кнопок действий */
+#action-btn {
+    background-color: #4A90E2; /* Голубой фон */
+    color: #FFFFFF; /* Белый текст */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Закруглённые углы */
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+#action-btn:hover {
+    background-color: #6AB0FF; /* Светлее голубой при наведении */
+}
+
+#action-btn:pressed {
+    background-color: #3A78C2; /* Темнее голубой при нажатии */
+}
+
+/* Стили для диалогов */
+#dialog {
+    background-color: #FFFFFF; /* Белый фон */
+    border: 1px solid #D1D5DB; /* Серый бордер */
+    border-radius: 10px; /* Закруглённые углы */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Тень */
+}
+
+/* Стили для выпадающих списков */
+QComboBox {
+    padding: 10px;
+    border: 1px solid #D1D5DB; /* Серый бордер */
+    border-radius: 8px; /* Закруглённые углы */
+    font-size: 14px;
+    background-color: #FFFFFF; /* Белый фон */
+    color: #333333; /* Тёмный текст */
+    transition: border-color 0.3s;
+}
+
+QComboBox:hover {
+    border-color: #4A90E2; /* Голубой бордер при наведении */
+}
+
+QComboBox:focus {
+    border-color: #4A90E2; /* Голубой бордер при фокусе */
+    outline: none;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: none; /* Можно добавить иконку стрелки, если есть */
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+/* Стили для элементов выпадающего списка */
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF; /* Белый фон */
+    border: 1px solid #D1D5DB; /* Серый бордер */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 8px;
+    color: #333333; /* Тёмный текст */
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #4A90E2; /* Голубой фон для выбранного элемента */
+    color: #FFFFFF; /* Белый текст */
+}
+
+/* Стили для вкладок */
+QTabWidget::pane {
+    border: none;
+    background-color: #F5F7FA; /* Светлый фон */
+}
+
+QTabBar::tab {
+    background-color: #D1D5DB; /* Серый фон */
+    color: #333333; /* Тёмный текст */
+    padding: 10px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #4A90E2; /* Голубой фон для активной вкладки */
+    color: #FFFFFF; /* Белый текст */
+}
+
+QTabBar::tab:hover {
+    background-color: #6AB0FF; /* Светлее голубой при наведении */
+}
+
+/* Стили для сообщений */
+QMessageBox {
+    background-color: #FFFFFF; /* Белый фон */
+    border-radius: 10px;
+}
+
+QMessageBox QLabel {
+    color: #333333; /* Тёмный текст */
+}
+
+
+QMessageBox QPushButton {
+    background-color: #4A90E2; /* Голубой фон */
+    color: #FFFFFF; /* Белый текст */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+QMessageBox QPushButton:hover {
+    background-color: #6AB0FF; /* Светлее голубой при наведении */
+}
