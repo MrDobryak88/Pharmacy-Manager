@@ -94,7 +94,7 @@ pharmacy-manager/
 
 ## 🔒 Лицензия
 
-MIT © 2026 [MIT](https://github.com/MrDobryak88/LICENSE)
+MIT © 2026 [MIT](https://github.com/MrDobryak88/Pharmacy-Manager/edit/main/LICENSE)
 
 ---
 
